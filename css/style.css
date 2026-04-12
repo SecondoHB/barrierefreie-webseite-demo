@@ -213,17 +213,11 @@ nav .cta-button {
 .hauptinfo1 {
   text-align: center;
   font-size: 1rem;
-  color: rgba(243, 74, 17, 0.95);
+  color: rgba(3, 23, 154, 0.95);
   font-weight: 500;
   margin: 0.5rem 2rem 0rem 2rem;
 }
-.hauptinfo2 {
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgba(243, 74, 17, 0.95);
-  font-weight: 500;
-  margin: 0rem 2rem 0rem 2rem;
-}
+
 
 .hero-content .lead {
   font-size: 1.25rem;
