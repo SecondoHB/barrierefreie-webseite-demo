@@ -1,2 +1,2 @@
 # barrierefreie-webseite-demo
-Demo Webseite zum Thema Barrierefreigeit
+Demo Webseite zum Thema Barrierefreiheit
