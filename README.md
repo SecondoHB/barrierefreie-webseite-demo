@@ -1,6 +1,3 @@
-# barrierefreie-webseite-demo
-Demo Webseite zum Thema Barrierefreiheit
-
 # 🐶 Barrierefreie Hundetrainings-Website (Demo)
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
@@ -8,6 +5,8 @@ Demo Webseite zum Thema Barrierefreiheit
 ![JS](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Accessibility](https://img.shields.io/badge/WCAG-Ready-green)
 ![Status](https://img.shields.io/badge/Status-Demo-lightgrey)
+
+Die Seite ist aktuell noch in Bearbeitung und wird laufend erweitert ...
 
 ## 🧠 Projekt-Fokus
 
