@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hundetraining Wien – ruhiges & alltagstaugliches Training</title>
+    <meta
+      name="description"
+      content="Hundetraining in Wien: Leinenziehen, Bellen, Rückruf und Angst. Modernes, ruhiges Training für deinen Alltag mit Hund."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Barrierefrei Demoseite",
+        "description": "Eine Demo-Webseite zum Erlernen von Barrierefreiheit (A11y).",
+        "url": "https://secondohb.github.io/barrierefreie-webseite-demo/",                
+        "image": "https://secondohb.github.io/Barrierefreie-Demo-Seite/assets/img/hundetraining-wien-ruhiger-spaziergang.jpg",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "author": {
+          "@type": "Person",
+          "name": "Bernd Honhaiser"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+    <div class="hauptinfo1">
+      Dies ist eine Demo Webseite auf Github.com zum Thema:
+      <br /><i><b>Barrierefreie Webseiten</b></i
+      >.<br />
+    </div>
+    <div class="hauptinfo2">
+      Sie können daher auf dieser Seite niemanden kontaktieren.
+    </div>
+
+    <header>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html" aria-current="page">Start</a>
+        <a href="bellen.html">Bellen</a>
+        <a href="angst.html">Angst</a>
+        <a href="leineziehen.html">Leineziehen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+      <!-- HERO -->
+
+      <section class="hero-parallax section-large">
+        <img
+          src="assets/img/hundetraining-wien-ruhiger-spaziergang.JPG"
+          alt="Ruhiger Spaziergang mit Hund in Wien"
+          class="hero-image"
+        />
+
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content fade-in">
+          <h1>Ruhiges & modernes Hundetraining in Wien</h1>
+
+          <p class="lead">
+            Dein Hund zieht, bellt oder hört nicht zuverlässig?
+          </p>
+
+          <p class="sub">
+            Ich helfe dir, Alltagssituationen ruhig und klar zu lösen – ohne
+            Druck oder Stress.
+          </p>
+
+          <a href="kontakt.html" class="cta-button">
+            Jetzt kostenloses Erstgespräch sichern
+          </a>
+
+          <p class="micro-trust">Kostenlos • unverbindlich • individuell</p>
+        </div>
+      </section>
+
+      <!-- PROBLEME -->
+
+      <section>
+        <h2>Typische Probleme im Alltag</h2>
+
+        <div class="grid">
+          <div class="card fade-in delay-1">
+            <a href="leineziehen.html" class="card-link">
+              <h3>Leinenziehen im Alltag</h3>
+              <p>Dein Hund zieht ständig an der Leine?</p>
+            </a>
+          </div>
+
+          <div class="card fade-in delay-2">
+            <a href="bellen.html" class="card-link">
+              <h3>Bellen bei Begegnungen</h3>
+              <p>Reagiert dein Hund stark auf andere Hunde oder Menschen?</p>
+            </a>
+          </div>
+
+          <div class="card fade-in delay-3">
+            <a href="angst.html" class="card-link">
+              <h3>Angst</h3>
+              <p>Dein Hund hat Ängste</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANGEBOT -->
+
+      <section class="section-large">
+        <h2>Mein Ansatz im Hundetraining</h2>
+        <div class="centered">
+          <p>
+            Ich arbeite im echten Alltag – nicht im Trainingsraum. Ziel ist ein
+            Hund, der dich versteht und sich an dir orientiert.
+          </p>
+        </div>
+      </section>
+
+      <!-- ÜBER MICH -->
+
+      <section>
+        <h2>Warum dieses Training funktioniert</h2>
+        <div class="centered">
+          <p>
+            Hunde lernen durch Klarheit, Struktur und richtiges Timing – nicht
+            durch Druck.
+          </p>
+        </div>
+      </section>
+      <!-- CTA -->
+
+      <section class="cta section-large">
+        <h2>Bereit für entspannte Spaziergänge?</h2>
+
+        <p>Starte jetzt mit individuellem Hundetraining in Wien.</p>
+
+        <a href="kontakt.html" class="cta-button"
+          >Jetzt kostenloses Erstgespräch starten</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="footer-row">
+        <p>Hundetraining in Wien und Umgebung</p>
+        <nav aria-label="Rechtliche Seiten">
+          <a href="rechtliches/impressum.html">Impressum</a>
+          <a href="rechtliches/datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      const elements = document.querySelectorAll(".fade-in");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        },
+      );
+
+      elements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
