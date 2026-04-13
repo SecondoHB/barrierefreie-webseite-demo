@@ -87,7 +87,7 @@ Die Website orientiert sich an den WCAG-Prinzipien:
 
 ## 🧱 Content-Struktur
 
-- 🟢 Problemseiten (Leinenziehen, Bellen, Angst)
+- 🟢 Problemseiten (Leineziehen, Bellen, Angst)
 - 🟡 Angebotsseiten (Training & Lösungen)
 - 🔵 Wissensseiten / FAQ
 
