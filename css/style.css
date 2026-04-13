@@ -13,7 +13,6 @@ body {
   background: linear-gradient(to bottom, #ffffff, #f7f9fc);
   color: #1a1f2b;
   line-height: 1.6;
-  letter-spacing: 0.12rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -120,7 +119,7 @@ nav .cta-button {
 
 .hero-parallax {
   position: relative;
-  min-height: 85vh;
+  min-height: 85svh;
   /*padding: 0rem, 1.5rem;*/
   display: flex;
   align-items: center;
@@ -136,7 +135,7 @@ nav .cta-button {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   z-index: 0;
 }
@@ -267,6 +266,9 @@ section {
   border-radius: 1rem;
   border: 1px solid #e6eaf0;
   cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -384,13 +386,6 @@ section {
 /* =========================
    ANIMATIONS (PREMIUM)
 ========================= */
-
-/* Card Hover (High-End Gefühl) */
-.card {
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
 
 .card:hover {
   transform: translateY(-6px) scale(1.01);
