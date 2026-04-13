@@ -4,12 +4,12 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  font-weight: 400;
+  font-family: Verdana, Arial, sans-serif;  
   background: #1e1e2f;
-  color: white;
-  line-height: 1.6;
+  color: #e0e0e0;
   font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.12rem;
 }
 
 .skip-link {

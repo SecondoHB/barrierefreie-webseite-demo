@@ -8,15 +8,12 @@
 /* === BASE === */
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    Arial;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1rem;
   background: linear-gradient(to bottom, #ffffff, #f7f9fc);
   color: #1a1f2b;
   line-height: 1.6;
+  letter-spacing: 0.12rem;
   -webkit-font-smoothing: antialiased;
 }
 
