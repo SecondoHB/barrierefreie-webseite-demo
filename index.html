@@ -2,12 +2,18 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'none'; object-src 'none';"
+    />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="preload"
       as="image"
-      href="assets/img/hundetraining-wien-ruhiger-spaziergang.webp"
+      href="assets/img/hundetraining-wien-ruhiger-spaziergang.jpg"
     />
     <title>
       Hundetraining Wien – ruhiges Training & Hilfe bei Leineziehen, Bellen &
@@ -18,10 +24,6 @@
       name="description"
       content="Individuelles Hundetraining in Wien: Schluss mit Leineziehen, Bellen und Unsicherheit. 
       Lerne, wie dein Hund ruhig und entspannt wird."
-    />
-    <meta
-      name="keywords"
-      content="Hundetraining Wien, Hundetrainer Wien, Leineziehen, Hund bellt, Hund Angst Training"
     />
 
     <meta name="robots" content="index, follow" />
@@ -81,35 +83,6 @@
 
     <meta name="theme-color" content="#2196f3" />
 
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Hundetraining Wien",
-        "image": "https://www.../assets/img/hundetraining.jpg",
-        "description": "Ruhiges und alltagstaugliches Hundetraining in Wien.",
-        "telephone": "+43 ...",
-        "url": "https://www...",
-        "priceRange": "€€",
-        "openingHours": "Mo-Sa 09:00-18:00",
-        "serviceType": "Hundetraining",
-        "areaServed": "Wien, Österreich",
-
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Wien",
-          "addressCountry": "AT"
-        },
-
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 48.2082,
-          "longitude": 16.3738
-        }
-      }
-    </script>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -141,6 +114,7 @@
           src="assets/img/hundetraining-wien-ruhiger-spaziergang.jpg"
           alt="Ruhiger Spaziergang mit Hund in Wien"
           class="hero-image"
+          fetchpriority="high"
         />
 
         <div class="hero-overlay" aria-hidden="true"></div>
@@ -158,7 +132,7 @@
           </p>
 
           <a href="kontakt.html" class="cta-button">
-            Jetzt kostenloses Erstgespräch sichern
+            Kostenloses Erstgespräch für Hundetraining in Wien sichern.
           </a>
 
           <p class="micro-trust">Kostenlos • unverbindlich • individuell</p>
@@ -229,7 +203,43 @@
         >
       </section>
     </main>
-    <footer>
+
+    <footer itemscope itemtype="https://schema.org/ProfessionalService">
+      <!-- Versteckte SEO-Daten für Google -->
+      <meta itemprop="name" content="Hundetraining Wien" />
+      <meta
+        itemprop="description"
+        content="Ruhiges und alltagstaugliches Hundetraining in Wien. Hilfe bei Leineziehen, Bellen und Angst."
+      />
+      <meta
+        itemprop="image"
+        content="https://www.../assets/img/hundetraining.jpg"
+      />
+      <meta itemprop="url" content="https://www..." />
+      <meta itemprop="priceRange" content="€€" />
+      <a href="tel:+4312345678" itemprop="telephone">+43 1 2345678</a>
+      <meta itemprop="openingHours" content="Mo-Sa 09:00-18:00" />
+
+      <!-- Adresse & Standort -->
+      <div
+        itemprop="address"
+        itemscope
+        itemtype="https://schema.org/PostalAddress"
+      >
+        <meta itemprop="addressLocality" content="Wien" />
+        <meta itemprop="addressCountry" content="AT" />
+      </div>
+
+      <div
+        itemprop="geo"
+        itemscope
+        itemtype="https://schema.org/GeoCoordinates"
+      >
+        <meta itemprop="latitude" content="48.2082" />
+        <meta itemprop="longitude" content="16.3738" />
+      </div>
+
+      <!-- Sichtbarer Footer-Inhalt -->
       <div class="footer-row">
         <p>Hundetraining in Wien und Umgebung</p>
         <nav aria-label="Rechtliche Seiten">
@@ -238,24 +248,5 @@
         </nav>
       </div>
     </footer>
-
-    <script defer>
-      const elements = document.querySelectorAll(".fade-in");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
-          });
-        },
-        {
-          threshold: 0.15,
-        },
-      );
-
-      elements.forEach((el) => observer.observe(el));
-    </script>
   </body>
 </html>
