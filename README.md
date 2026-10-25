@@ -1,5 +1,7 @@
 # 🐶 Barrierefreie Hundetrainings-Website (Demo)
 
+[👉 Hier geht es zur Live-Webseite](https://secondohb.github.io/barrierefreie-webseite-demo/) 
+
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JS](https://img.shields.io/badge/JavaScript-ES6-yellow)
